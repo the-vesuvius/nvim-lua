@@ -32,3 +32,9 @@ opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or 
 --split windows
 opt.splitright = true
 opt.splitbelow = true
+
+-- filetype mappings
+vim.filetype.add({ extension = { zon = "zig" } })
+
+-- native LSP servers (configured in after/lsp/)
+vim.lsp.enable("zls")
